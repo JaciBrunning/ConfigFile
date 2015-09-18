@@ -1,8 +1,8 @@
-require "configfile/version"
 require "yaml"
 require "json"
 
 class ConfigFile < Hash
+  VERSION = "0.2.0"
 
   def initialize filename, defaults={}, form=:yaml
     @filename = filename
